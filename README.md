@@ -16,6 +16,10 @@ A entrega compara tres abordagens:
 ## Estrutura
 
 ```text
+README.md
+requirements.txt
+.gitignore
+
 data/
   train/images e train/labels
   valid/images e valid/labels
@@ -23,27 +27,8 @@ data/
   data.yaml
   data_yolov5.yaml
 
-data_cnn/
-  train/milho e train/tomate
-  valid/milho e valid/tomate
-  test/milho e test/tomate
-
 notebook/
   JacquelineNanamiMatushima_rm568498_pbl_fase6.ipynb
-
-scripts/
-  criar_labels_faltantes.py
-  criar_data_cnn.py
-
-results/
-  yolo_custom/
-  yolo_padrao/
-  cnn_do_zero/
-
-assets/
-  prints_yolo_custom/
-  prints_yolo_padrao/
-  prints_cnn/
 ```
 
 ## Dataset
@@ -71,34 +56,23 @@ Cada imagem deve ter uma label `.txt` com o mesmo nome em sua pasta corresponden
 pip install -r requirements.txt
 ```
 
-2. Garanta as labels YOLO:
+2. Abra o notebook:
 
-```bash
-python scripts/criar_labels_faltantes.py
-```
+[notebook/JacquelineNanamiMatushima_rm568498_pbl_fase6.ipynb](notebook/JacquelineNanamiMatushima_rm568498_pbl_fase6.ipynb)
 
-3. Gere a estrutura para a CNN:
+3. Rode as celulas em ordem.
 
-```bash
-python scripts/criar_data_cnn.py
-```
+## Video
 
-4. Abra o notebook:
-
-```text
-notebook/JacquelineNanamiMatushima_rm568498_pbl_fase6.ipynb
-```
-
-5. Rode as celulas em ordem.
+Link do video: pendente de inserir o link do YouTube nao listado.
 
 ## Saidas Esperadas
 
 - YOLO customizado: `results/yolo_custom/`
 - YOLO padrao: `results/yolo_padrao/`
 - CNN do zero: `results/cnn_do_zero/`
-- Prints do YOLO customizado: `assets/prints_yolo_custom/`
-- Prints do YOLO padrao: `assets/prints_yolo_padrao/`
-- Graficos da CNN: `assets/prints_cnn/`
+
+Essas saidas sao geradas automaticamente e nao ficam versionadas no repositorio.
 
 ## Conclusao
 

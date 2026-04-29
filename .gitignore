@@ -17,6 +17,7 @@ backups/
 results/
 yolov5/
 data_cnn/
+assets/
 *.cache
 *.pt
 *.h5
