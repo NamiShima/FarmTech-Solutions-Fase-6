@@ -1,39 +1,21 @@
-# Fase 6 - Visao Computacional com YOLO e CNN
+# FarmTech Solutions - Visao Computacional
 
 ## Objetivo
 
-Projeto de visao computacional para detectar e classificar duas classes:
+Desenvolver um projeto academico de visao computacional para detectar e classificar objetos agricolas das classes milho e tomate, utilizando o dataset fornecido e a execucao centralizada em notebook.
 
-- milho
-- tomate
-
-A entrega compara tres abordagens:
-
-1. YOLOv5 customizado
-2. YOLO padrao/pre-treinado
-3. CNN treinada do zero
-
-## Estrutura
+## Estrutura do projeto
 
 ```text
+data/
+notebook/
 README.md
 requirements.txt
-.gitignore
-
-data/
-  train/images e train/labels
-  valid/images e valid/labels
-  test/images e test/labels
-  data.yaml
-  data_yolov5.yaml
-
-notebook/
-  JacquelineNanamiMatushima_rm568498_pbl_fase6.ipynb
 ```
 
 ## Dataset
 
-O dataset YOLO possui 80 imagens no total:
+O dataset esta organizado no formato YOLO e possui 80 imagens anotadas, divididas em treino, validacao e teste.
 
 | Split | Imagens | Labels |
 |---|---:|---:|
@@ -46,9 +28,7 @@ Classes:
 - `0 = milho`
 - `1 = tomate`
 
-Cada imagem deve ter uma label `.txt` com o mesmo nome em sua pasta correspondente de labels.
-
-## Como Rodar
+## Como rodar
 
 1. Instale as dependencias:
 
@@ -58,22 +38,20 @@ pip install -r requirements.txt
 
 2. Abra o notebook:
 
-[notebook/JacquelineNanamiMatushima_rm568498_pbl_fase6.ipynb](notebook/JacquelineNanamiMatushima_rm568498_pbl_fase6.ipynb)
+```text
+notebook/JacquelineNanamiMatushima_rm568498_pbl_fase6.ipynb
+```
 
-3. Rode as celulas em ordem.
+3. Execute as celulas em ordem.
 
-## Video
+## O que o projeto faz
 
-Link do video: pendente de inserir o link do YouTube nao listado.
-
-## Saidas Esperadas
-
-- YOLO customizado: `results/yolo_custom/`
-- YOLO padrao: `results/yolo_padrao/`
-- CNN do zero: `results/cnn_do_zero/`
-
-Essas saidas sao geradas automaticamente e nao ficam versionadas no repositorio.
+O projeto treina e avalia modelos de visao computacional para identificar milho e tomate nas imagens do dataset. A execucao no notebook contempla a preparacao dos dados, o treinamento, a avaliacao e a comparacao dos resultados obtidos.
 
 ## Conclusao
 
-O YOLO customizado e a abordagem mais adequada para o projeto, pois foi treinado especificamente para milho e tomate e retorna bounding boxes com localizacao e confianca. O YOLO padrao funciona como baseline, mas nao foi treinado especificamente para essas classes. A CNN do zero funciona como classificadora, mas nao localiza objetos e depende de mais dados para generalizar melhor.
+O projeto atende ao objetivo academico de aplicar visao computacional em um problema agricola, utilizando um dataset anotado com duas classes e um fluxo simples de execucao por notebook. A abordagem permite avaliar a deteccao e classificacao de milho e tomate de forma direta e reprodutivel.
+
+## Video demonstrativo
+
+Link do video demonstrativo: inserir link aqui.
