@@ -14,6 +14,9 @@ Aplicar tecnicas de visao computacional em um cenario agricola para:
 - realizar predicoes sobre imagens de teste;
 - visualizar os resultados obtidos.
 
+## Notebook no Google Colab
+👉 [Acessar o Notebook no Colab](https://colab.research.google.com/drive/1TyAFRSa9lNEJ7J0i8iYdpIzpRNckf6St?usp=sharing)
+
 ## Estrutura do Projeto
 
 ```text
@@ -112,15 +115,15 @@ python -m ipykernel install --user --name=fase6 --display-name "Python (fase6)"
 
 1. Abra o notebook:
 
-   ```text
+```text
    notebook/JacquelineNanamiMatushima_rm568498_pbl_fase6.ipynb
-   ```
+```
 
 2. Selecione o kernel:
 
-   ```text
+```text
    Python (fase6)
-   ```
+```
 
 3. Execute as celulas do notebook em ordem.
 
@@ -165,4 +168,4 @@ O projeto atende ao objetivo academico de aplicar tecnicas de visao computaciona
 
 ## Video Demonstrativo
 
-Link do video demonstrativo: inserir link aqui.
+Link do video demonstrativo: https://youtu.be/dvXygzMjjCA?si=zm3jwJLtMtUTEZD3
