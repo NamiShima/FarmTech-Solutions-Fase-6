@@ -14,9 +14,6 @@ Aplicar tecnicas de visao computacional em um cenario agricola para:
 - realizar predicoes sobre imagens de teste;
 - visualizar os resultados obtidos.
 
-## Notebook no Google Colab
-👉 [Acessar o Notebook no Colab](https://colab.research.google.com/drive/1TyAFRSa9lNEJ7J0i8iYdpIzpRNckf6St?usp=sharing)
-
 ## Estrutura do Projeto
 
 ```text
